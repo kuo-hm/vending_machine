@@ -1,0 +1,6 @@
+/* img take the full width of screen and 30vh */
+img{
+    width: 100%;
+    height: 30vh;
+    
+}
