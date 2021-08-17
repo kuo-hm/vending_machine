@@ -1,36 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 :root {
   --background: #000000;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-  background: #222;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-}
 
-.content {
-  height: 200vh;
-  background-image: url(//unsplash.it/1000/1000);
-  background-color: #333;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-}
+
+
 
 /* navigation styles start here */
-header {
+.head {
   background: var(--background);
   text-align: center;
   position: fixed;
   z-index: 999;
   width: 100%;
+  top: 0;
 }
 
 /* changed this from the tutorial video to
@@ -126,21 +110,23 @@ nav a:hover {
 }
 .logo{
   height: 3em;
-  margin-bottom: 1em;
+  margin-top: .5em;
+  margin-bottom:0.2em ;
+  cursor: pointer;
 }
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
   }
 
-  header {
+  .head {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
   .logo {
     grid-column: 2/3;
-    height: 5em;
+    height: 3em;
   }
 
   nav {
