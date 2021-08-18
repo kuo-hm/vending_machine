@@ -18,6 +18,7 @@ body, button, input {
 
 .screen {
   position: relative;
+  width: 420px;
   background: #3e3e3e;
   border-radius: 15px;
 }
@@ -134,7 +135,7 @@ body, button, input {
 }
 
 .app-form-control {
-  width: 100%;
+  width: 80%;
   padding: 10px 0;
   background: none;
   border: none;
@@ -223,9 +224,27 @@ body, button, input {
     padding: 0;
   }
 }
+.form-control{
+    padding: 5px 10px 10px 10px;
+}
+@media screen and (min-width: 800px) {
+  .screen-body {
+    padding: 40px;
+  }
 
-
-/* Selection */
+  .screen-body-item {
+    padding: 0;
+  }
+  .screen {
+  position: relative;
+  width: 900px;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
 .form-control{
     padding: 10px 100px 10px 10px;
 }
+}
+
+
+/* Selection */
